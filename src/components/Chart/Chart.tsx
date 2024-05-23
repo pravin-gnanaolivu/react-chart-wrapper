@@ -9,15 +9,9 @@ export interface ChartProps {
   options: ChartOptions;
 }
 
+Chart.register(...registerables);
+
 const ReactChart = ({ type, data, options }: ChartProps) => {
-  React.useLayoutEffect(() => {
-    Chart.register(...registerables);
-
-    return () => {
-      Chart.unregister(...registerables);
-    };
-  }, []);
-
   return <ChartJs type={type} data={data} options={options} />;
 };
 

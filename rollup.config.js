@@ -10,6 +10,7 @@ const packageJson = require("./package.json");
 export default [
   {
     input: "src/index.ts",
+    external: ["chart.js", "react-chartjs-2"],
     output: [
       {
         file: packageJson.main,
