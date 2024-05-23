@@ -1,6 +1,6 @@
 {
   "name": "react-chart-wrapper",
-  "version": "3.4.0",
+  "version": "0.1.0",
   "description": "A simple template for a custom React chart wrapper library",
   "scripts": {
     "rollup": "rollup -c",
